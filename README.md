@@ -32,6 +32,8 @@ This decoupled approach prevents gradient interference, allowing the model to ma
 | **Price Prediction (MAE)** | **₹178.44** | High precision given prices range up to ₹50,000. |
 | **Tier Accuracy** | **77.4%** | Successfully distinguishes Premium vs. Value segments. |
 | **Optimization** | **Weighted Loss** | Balanced gradients using $\lambda_{tier}=1.0, \lambda_{price}=0.05$. |
+<img width="708" height="371" alt="Model Output Metrics" src="https://github.com/user-attachments/assets/d139a082-649f-4f23-8bcf-920710d595ea" />
+
 
 ### 🔍 Key Insight: Anomaly Detection
 The model validates the **"Branded Generic"** phenomenon (identified by *Ghooi et al., 2025*). The gap between the *Predicted Price* (based on ingredients) and *Actual Price* serves as an automated signal for **Price Gouging**, flagging products with excessive marketing markups.
